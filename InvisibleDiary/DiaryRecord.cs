@@ -19,35 +19,39 @@ namespace InvisibleDiary
         [ProtoMember(4)]
         public string Tags { get; set; }
 
-        private sealed class DiaryRecordEqualityComparer : IEqualityComparer<DiaryRecord>
+        protected bool Equals(DiaryRecord other)
         {
-            public bool Equals(DiaryRecord x, DiaryRecord y)
-            {
-                if (ReferenceEquals(x, y)) return true;
-                if (ReferenceEquals(x, null)) return false;
-                if (ReferenceEquals(y, null)) return false;
-                if (x.GetType() != y.GetType()) return false;
-                return string.Equals(x.Title, y.Title) && x.Created.Equals(y.Created) && string.Equals(x.Content, y.Content) && string.Equals(x.Tags, y.Tags);
-            }
+            return string.Equals(Title, other.Title) && Created.Equals(other.Created) && string.Equals(Content, other.Content) && string.Equals(Tags, other.Tags);
+        }
 
-            public int GetHashCode(DiaryRecord obj)
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((DiaryRecord)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
             {
-                unchecked
-                {
-                    int hashCode = (obj.Title != null ? obj.Title.GetHashCode() : 0);
-                    hashCode = (hashCode * 397) ^ obj.Created.GetHashCode();
-                    hashCode = (hashCode * 397) ^ (obj.Content != null ? obj.Content.GetHashCode() : 0);
-                    hashCode = (hashCode * 397) ^ (obj.Tags != null ? obj.Tags.GetHashCode() : 0);
-                    return hashCode;
-                }
+                int hashCode = (Title != null ? Title.GetHashCode() : 0);
+                hashCode = (hashCode * 397) ^ Created.GetHashCode();
+                hashCode = (hashCode * 397) ^ (Content != null ? Content.GetHashCode() : 0);
+                hashCode = (hashCode * 397) ^ (Tags != null ? Tags.GetHashCode() : 0);
+                return hashCode;
             }
         }
 
-        private static readonly IEqualityComparer<DiaryRecord> DiaryRecordComparerInstance = new DiaryRecordEqualityComparer();
-
-        public static IEqualityComparer<DiaryRecord> DiaryRecordComparer
+        public static bool operator ==(DiaryRecord left, DiaryRecord right)
         {
-            get { return DiaryRecordComparerInstance; }
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(DiaryRecord left, DiaryRecord right)
+        {
+            return !Equals(left, right);
         }
     }
 }

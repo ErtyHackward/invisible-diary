@@ -193,9 +193,9 @@ namespace InvisibleDiary
 
             var otherRecords = otherDirary.ReadAllRecords();
 
-            var merged = ourRecords.Concat(otherRecords).Distinct().OrderBy(r => r.Created);
+            var merged = ourRecords.Concat(otherRecords).Distinct().OrderBy(r => r.Created).ToList();
 
-            _fileStream.Seek(_headerLength, SeekOrigin.Begin);
+            _fileStream.Seek(_headerLength + 4, SeekOrigin.Begin);
 
             WriteRecords(merged);
 
