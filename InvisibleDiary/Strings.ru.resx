@@ -165,4 +165,20 @@
     <value>Подтверждение</value>
     <comment>Confirm</comment>
   </data>
+  <data name="OpenDiaryFirst" xml:space="preserve">
+    <value>Сначала откройте дневник!</value>
+    <comment>Open diary first!</comment>
+  </data>
+  <data name="SelectFileToMerge" xml:space="preserve">
+    <value>Выбери файл для слияния</value>
+    <comment>Select file to merge</comment>
+  </data>
+  <data name="ErrorDuringMerge" xml:space="preserve">
+    <value>Ошибка во время слияния: {0}</value>
+    <comment>Error during merge: {0}</comment>
+  </data>
+  <data name="MergeComplete" xml:space="preserve">
+    <value>Слияние завершено!</value>
+    <comment>Merge complete!</comment>
+  </data>
 </root>

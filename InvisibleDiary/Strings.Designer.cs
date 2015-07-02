@@ -115,11 +115,38 @@ namespace InvisibleDiary {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error during merge: {0}.
+        /// </summary>
+        internal static string ErrorDuringMerge {
+            get {
+                return ResourceManager.GetString("ErrorDuringMerge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid passphrase, please try again..
         /// </summary>
         internal static string InvalidPassphrase {
             get {
                 return ResourceManager.GetString("InvalidPassphrase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Merge complete!.
+        /// </summary>
+        internal static string MergeComplete {
+            get {
+                return ResourceManager.GetString("MergeComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open diary first!.
+        /// </summary>
+        internal static string OpenDiaryFirst {
+            get {
+                return ResourceManager.GetString("OpenDiaryFirst", resourceCulture);
             }
         }
         
@@ -138,6 +165,15 @@ namespace InvisibleDiary {
         internal static string PassphraseTooShort {
             get {
                 return ResourceManager.GetString("PassphraseTooShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select file to merge.
+        /// </summary>
+        internal static string SelectFileToMerge {
+            get {
+                return ResourceManager.GetString("SelectFileToMerge", resourceCulture);
             }
         }
         

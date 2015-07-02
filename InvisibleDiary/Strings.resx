@@ -165,4 +165,20 @@
     <value>Confirm</value>
     <comment>Confirm</comment>
   </data>
+  <data name="OpenDiaryFirst" xml:space="preserve">
+    <value>Open diary first!</value>
+    <comment>Open diary first!</comment>
+  </data>
+  <data name="SelectFileToMerge" xml:space="preserve">
+    <value>Select file to merge</value>
+    <comment>Select file to merge</comment>
+  </data>
+  <data name="MergeComplete" xml:space="preserve">
+    <value>Merge complete!</value>
+    <comment>Merge complete!</comment>
+  </data>
+  <data name="ErrorDuringMerge" xml:space="preserve">
+    <value>Error during merge: {0}</value>
+    <comment>Error during merge: {0}</comment>
+  </data>
 </root>

@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(FrmMain));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.mergeButton = new System.Windows.Forms.Button();
             this.unlockButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
@@ -56,6 +57,8 @@
             // 
             // splitContainer.Panel1
             // 
+            resources.ApplyResources(this.splitContainer.Panel1, "splitContainer.Panel1");
+            this.splitContainer.Panel1.Controls.Add(this.mergeButton);
             this.splitContainer.Panel1.Controls.Add(this.unlockButton);
             this.splitContainer.Panel1.Controls.Add(this.label3);
             this.splitContainer.Panel1.Controls.Add(this.dateLabel);
@@ -65,9 +68,17 @@
             // 
             // splitContainer.Panel2
             // 
+            resources.ApplyResources(this.splitContainer.Panel2, "splitContainer.Panel2");
             this.splitContainer.Panel2.Controls.Add(this.calendar);
             this.splitContainer.Panel2.Controls.Add(this.entriesTreeView);
             this.splitContainer.Panel2.Controls.Add(this.label2);
+            // 
+            // mergeButton
+            // 
+            resources.ApplyResources(this.mergeButton, "mergeButton");
+            this.mergeButton.Name = "mergeButton";
+            this.mergeButton.UseVisualStyleBackColor = true;
+            this.mergeButton.Click += new System.EventHandler(this.mergeButton_Click);
             // 
             // unlockButton
             // 
@@ -121,15 +132,15 @@
             // 
             // contextMenuStrip1
             // 
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.changeFontToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // changeFontToolStripMenuItem
             // 
-            this.changeFontToolStripMenuItem.Name = "changeFontToolStripMenuItem";
             resources.ApplyResources(this.changeFontToolStripMenuItem, "changeFontToolStripMenuItem");
+            this.changeFontToolStripMenuItem.Name = "changeFontToolStripMenuItem";
             // 
             // FrmMain
             // 
@@ -164,6 +175,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem changeFontToolStripMenuItem;
+        private System.Windows.Forms.Button mergeButton;
 
 
     }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using ProtoBuf;
 
@@ -26,10 +28,21 @@ namespace InvisibleDiary
         {
             _fileStream = File.Open(filePath, FileMode.Open);
 
-            var reader = new BinaryReader(_fileStream);
+            _header = ReadHeader(_fileStream, out _headerLength);
 
-            _headerLength = reader.ReadInt32();
-            var headerBytes = reader.ReadBytes(_headerLength);
+            _rsa = new RSACryptoServiceProvider();
+            _rsa.ImportCspBlob(_header.PublicKey);
+
+            IsLocked = true;
+            IsOpen = true;
+        }
+
+        private DiaryHeader ReadHeader(FileStream fs, out int headerLength)
+        {
+            var reader = new BinaryReader(fs);
+
+            headerLength = reader.ReadInt32();
+            var headerBytes = reader.ReadBytes(headerLength);
 
             if (headerBytes.Length != _headerLength)
             {
@@ -38,13 +51,7 @@ namespace InvisibleDiary
 
             var headerStream = new MemoryStream(headerBytes);
 
-            _header = Serializer.Deserialize<DiaryHeader>(headerStream);
-
-            _rsa = new RSACryptoServiceProvider();
-            _rsa.ImportCspBlob(_header.PublicKey);
-
-            IsLocked = true;
-            IsOpen = true;
+            return Serializer.Deserialize<DiaryHeader>(headerStream);
         }
 
         public void Unlock(string passphrase)
@@ -129,17 +136,71 @@ namespace InvisibleDiary
 
             _fileStream.Seek(0, SeekOrigin.End);
 
-            var encryptedRecord = EncryptionHelper.EncryptRecord(record, _rsa);
+            WriteRecords(new[] { record });
+        }
 
+        private void WriteRecords(IEnumerable<DiaryRecord> records)
+        {
             var writer = new BinaryWriter(_fileStream);
-
-            var length = encryptedRecord.Body.Length + encryptedRecord.Header.Length;
-
-            writer.Write(length);
-            writer.Write(encryptedRecord.Header);
-            writer.Write(encryptedRecord.Body);
-            writer.Write(length);
+            foreach (var diaryRecord in records)
+            {
+                var encryptedRecord = EncryptionHelper.EncryptRecord(diaryRecord, _rsa);
+                
+                var length = encryptedRecord.Body.Length + encryptedRecord.Header.Length;
+                writer.Write(length);
+                writer.Write(encryptedRecord.Header);
+                writer.Write(encryptedRecord.Body);
+                writer.Write(length);
+            }
             writer.Flush();
+        }
+
+        public List<DiaryRecord> ReadAllRecords()
+        {
+            if (!IsOpen)
+                throw new InvalidOperationException("Please open the diary before reading it");
+
+            RewindBack();
+
+            // read all our records
+            var records = new List<DiaryRecord>();
+            while (CanReadMoreRecords)
+            {
+                records.Add(ReadPrevious());
+            }
+
+            records.Reverse();
+
+            return records;
+        }
+
+        public void Merge(string otherFilePath)
+        {
+
+            var ourRecords = ReadAllRecords();
+            
+            // read all other records
+            var otherDirary = new Diary();
+
+            otherDirary.OpenDiary(otherFilePath);
+            
+            if (!_header.Equals(otherDirary._header))
+                throw new ApplicationException("Different headers, cannot merge");
+
+
+            otherDirary._rsa = _rsa;
+            otherDirary.IsLocked = false;
+
+            var otherRecords = otherDirary.ReadAllRecords();
+
+            var merged = ourRecords.Concat(otherRecords).Distinct().OrderBy(r => r.Created);
+
+            _fileStream.Seek(_headerLength, SeekOrigin.Begin);
+
+            WriteRecords(merged);
+
+            _fileStream.SetLength(_fileStream.Position);
+
         }
 
         public void Dispose()

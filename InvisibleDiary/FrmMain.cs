@@ -108,6 +108,23 @@ namespace InvisibleDiary
 
         }
 
+        private async Task LoadEntries()
+        {
+            entriesTreeView.Nodes.Clear();
+
+            _diary.RewindBack();
+            var records = new List<DiaryRecord>();
+
+            while (_diary.CanReadMoreRecords)
+            {
+                var record = await Task.Run(() => _diary.ReadPrevious());
+                AddToTree(record);
+                records.Add(record);
+            }
+
+            calendar.BoldedDates = records.Select(r => r.Created).ToArray();
+        }
+
         private async void unlockButton_Click(object sender, EventArgs e)
         {
             try
@@ -119,17 +136,7 @@ namespace InvisibleDiary
                         _diary.Unlock(frmEnterPassword.Password);
                         splitContainer.Panel2Collapsed = false;
 
-                        _diary.RewindBack();
-                        var records = new List<DiaryRecord>();
-
-                        while (_diary.CanReadMoreRecords)
-                        {
-                            var record = await Task.Run(() => _diary.ReadPrevious());
-                            AddToTree(record);
-                            records.Add(record);
-                        }
-
-                        calendar.BoldedDates = records.Select(r => r.Created).ToArray();
+                        await LoadEntries();
                         unlockButton.Hide();
                     }
                 }
@@ -193,6 +200,35 @@ namespace InvisibleDiary
                     e.Cancel = true;
                 }
             }
+        }
+
+        private async void mergeButton_Click(object sender, EventArgs e)
+        {
+            if (!_diary.IsOpen || _diary.IsLocked)
+            {
+                MessageBox.Show(Strings.OpenDiaryFirst);
+                return;
+            }
+
+            using (var ofd = new OpenFileDialog {  })
+            {
+                ofd.Title = Strings.SelectFileToMerge;
+                ofd.Filter = @"*.ivd|*.ivd";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        _diary.Merge(ofd.FileName);
+                        await LoadEntries();
+                        MessageBox.Show(Strings.MergeComplete);
+                    }
+                    catch (Exception x)
+                    {
+                        MessageBox.Show(Strings.ErrorDuringMerge);
+                    }
+                }
+            }
+
         }
         
     }
