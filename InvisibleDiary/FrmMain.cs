@@ -23,6 +23,7 @@ namespace InvisibleDiary
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            splitContainer.SplitterDistance = (int)(Width * 0.76f);
             splitContainer.Panel2Collapsed = true;
             dateLabel.Text = string.Format(Strings.TodayIs, DateTime.Today.ToLongDateString());
 
@@ -66,16 +67,16 @@ namespace InvisibleDiary
 
         }
 
-        private void writeButton_Click(object sender, EventArgs e)
+        private async void writeButton_Click(object sender, EventArgs e)
         {
             if (mainTextBox.ReadOnly)
             {
-                tagsTextBox.Text = "";
+                tagsTextBox2.Text = "";
                 mainTextBox.Text = "";
                 dateLabel.Text = string.Format(Strings.TodayIs, DateTime.Today.ToLongDateString());
                 writeButton.Text = Strings.WriteDown;
                 mainTextBox.ReadOnly = false;
-                tagsTextBox.ReadOnly = false;
+                tagsTextBox2.ReadOnly = false;
                 return;
             }
 
@@ -88,7 +89,7 @@ namespace InvisibleDiary
             var diaryRecord = new DiaryRecord();
             diaryRecord.Created = DateTime.Now;
             diaryRecord.Content = mainTextBox.Text;
-            diaryRecord.Tags = tagsTextBox.Text;
+            diaryRecord.Tags = tagsTextBox2.Text;
 
             try
             {
@@ -101,9 +102,9 @@ namespace InvisibleDiary
             }
 
             if (!_diary.IsLocked)
-                AddToTree(diaryRecord);
+                await LoadEntries();
 
-            tagsTextBox.Text = "";
+            tagsTextBox2.Text = "";
             mainTextBox.Text = "";
 
         }
@@ -182,11 +183,15 @@ namespace InvisibleDiary
                     }
                 }
 
+                var fixedContent = !record.Content.Contains("\r\n")
+                    ? record.Content.Replace("\n", "\r\n")
+                    : record.Content;
+
                 mainTextBox.ReadOnly = true;
-                mainTextBox.Text = record.Content;
+                mainTextBox.Text = fixedContent;
                 dateLabel.Text = string.Format(Strings.EntryFrom, record.Created);
-                tagsTextBox.Text = record.Tags;
-                tagsTextBox.ReadOnly = true;
+                tagsTextBox2.Text = record.Tags;
+                tagsTextBox2.ReadOnly = true;
                 writeButton.Text = Strings.AddNew;
             }
         }

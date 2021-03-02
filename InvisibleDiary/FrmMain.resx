@@ -117,266 +117,248 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;mergeButton.Name" xml:space="preserve">
-    <value>mergeButton</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;writeButton.Name" xml:space="preserve">
-    <value>writeButton</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;unlockButton.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="dateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 14</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="entriesTreeView.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="tagsTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 517</value>
-  </data>
-  <data name="&gt;&gt;mergeButton.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="writeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 516</value>
-  </data>
-  <data name="writeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <data name="splitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer</value>
-  </data>
-  <data name="tagsTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="calendar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="splitContainer.Panel2MinSize" type="System.Int32, mscorlib">
-    <value>180</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 16</value>
-  </data>
-  <data name="&gt;&gt;tagsTextBox.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="mergeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>485, 12</value>
-  </data>
-  <data name="&gt;&gt;tagsTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
-  </data>
-  <data name="&gt;&gt;unlockButton.Name" xml:space="preserve">
-    <value>unlockButton</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>splitContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;unlockButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 11, 10, 11</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 521</value>
-  </data>
-  <data name="writeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 25</value>
-  </data>
-  <data name="&gt;&gt;unlockButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="writeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="&gt;&gt;mainTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="mainTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="splitContainer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;changeFontToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="splitContainer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
   </data>
-  <data name="&gt;&gt;mainTextBox.Parent" xml:space="preserve">
+  <data name="tagsTextBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="tagsTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 614</value>
+  </data>
+  <data name="tagsTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tagsTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tagsTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tagsTextBox2.Name" xml:space="preserve">
+    <value>tagsTextBox2</value>
+  </data>
+  <data name="&gt;&gt;tagsTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tagsTextBox2.Parent" xml:space="preserve">
     <value>splitContainer.Panel1</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="entriesTreeView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 12</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
-    <value>738</value>
-  </data>
-  <data name="&gt;&gt;mergeButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tagsTextBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 16</value>
+  <data name="mergeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;dateLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="mergeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 22</value>
   </data>
-  <data name="mainTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
+  <data name="mergeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 6, 3, 6</value>
   </data>
-  <data name="writeButton.Text" xml:space="preserve">
-    <value>Write down</value>
-  </data>
-  <data name="&gt;&gt;entriesTreeView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;changeFontToolStripMenuItem.Name" xml:space="preserve">
-    <value>changeFontToolStripMenuItem</value>
-  </data>
-  <data name="mainTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 463</value>
-  </data>
-  <data name="dateLabel.Text" xml:space="preserve">
-    <value>Today is 25 Sept 2014</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;mergeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="changeFontToolStripMenuItem.Text" xml:space="preserve">
-    <value>Change font...</value>
-  </data>
-  <data name="mainTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="tagsTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;dateLabel.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;entriesTreeView.Name" xml:space="preserve">
-    <value>entriesTreeView</value>
-  </data>
-  <data name="entriesTreeView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 204</value>
-  </data>
-  <data name="entriesTreeView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;entriesTreeView.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="mergeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 38</value>
   </data>
   <data name="mergeButton.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;mainTextBox.Name" xml:space="preserve">
-    <value>mainTextBox</value>
+  <data name="mergeButton.Text" xml:space="preserve">
+    <value>Merge</value>
   </data>
-  <data name="dateLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;mergeButton.Name" xml:space="preserve">
+    <value>mergeButton</value>
   </data>
-  <data name="&gt;&gt;dateLabel.Name" xml:space="preserve">
-    <value>dateLabel</value>
+  <data name="&gt;&gt;mergeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="entriesTreeView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 339</value>
+  <data name="&gt;&gt;mergeButton.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
   </data>
-  <data name="changeFontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+  <data name="&gt;&gt;mergeButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="calendar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="unlockButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;tagsTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="unlockButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 22</value>
+  </data>
+  <data name="unlockButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 6, 3, 6</value>
+  </data>
+  <data name="unlockButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 38</value>
+  </data>
+  <data name="unlockButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="unlockButton.Text" xml:space="preserve">
+    <value>Open the diary</value>
+  </data>
+  <data name="&gt;&gt;unlockButton.Name" xml:space="preserve">
+    <value>unlockButton</value>
+  </data>
+  <data name="&gt;&gt;unlockButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unlockButton.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;unlockButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 618</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tagsTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="dateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 26</value>
+  </data>
+  <data name="dateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="dateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="dateLabel.Text" xml:space="preserve">
+    <value>Today is 25 Sept 2014</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Name" xml:space="preserve">
+    <value>dateLabel</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="writeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="writeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, 614</value>
+  </data>
+  <data name="writeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 7</value>
+  </data>
+  <data name="writeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 28</value>
+  </data>
+  <data name="writeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="writeButton.Text" xml:space="preserve">
+    <value>Write down</value>
+  </data>
+  <data name="&gt;&gt;writeButton.Name" xml:space="preserve">
+    <value>writeButton</value>
   </data>
   <data name="&gt;&gt;writeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="mainTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 46</value>
+  <data name="&gt;&gt;writeButton.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;writeButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mainTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="mainTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 74</value>
+  </data>
+  <data name="mainTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 7</value>
+  </data>
+  <data name="mainTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mainTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="mainTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 525</value>
+  </data>
+  <data name="mainTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;mainTextBox.Name" xml:space="preserve">
+    <value>mainTextBox</value>
   </data>
   <data name="&gt;&gt;mainTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="unlockButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 12</value>
+  <data name="&gt;&gt;mainTextBox.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;mainTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="calendar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 22</value>
+  </data>
+  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>19, 26, 19, 26</value>
+  </data>
+  <data name="calendar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;calendar.Name" xml:space="preserve">
     <value>calendar</value>
@@ -384,121 +366,151 @@
   <data name="&gt;&gt;calendar.Type" xml:space="preserve">
     <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmMain</value>
-  </data>
-  <data name="tagsTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>587, 23</value>
-  </data>
-  <data name="&gt;&gt;writeButton.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Invisible Diary</value>
-  </data>
-  <data name="unlockButton.Text" xml:space="preserve">
-    <value>Open the diary</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
-    <value>splitContainer.Panel2</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Entires</value>
-  </data>
   <data name="&gt;&gt;calendar.Parent" xml:space="preserve">
     <value>splitContainer.Panel2</value>
   </data>
-  <data name="mergeButton.Text" xml:space="preserve">
-    <value>Merge</value>
+  <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 184</value>
+  <data name="entriesTreeView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="entriesTreeView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 255</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
+  <data name="entriesTreeView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 7</value>
   </data>
-  <data name="dateLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 16</value>
+  <data name="entriesTreeView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 372</value>
   </data>
-  <data name="mainTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="entriesTreeView.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
-    <value>splitContainer</value>
+  <data name="&gt;&gt;entriesTreeView.Name" xml:space="preserve">
+    <value>entriesTreeView</value>
   </data>
-  <data name="splitContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>952, 555</value>
-  </data>
-  <data name="mergeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="writeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="mainTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Tags</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
+  <data name="&gt;&gt;entriesTreeView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;entriesTreeView.Parent" xml:space="preserve">
     <value>splitContainer.Panel2</value>
   </data>
-  <data name="&gt;&gt;writeButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;entriesTreeView.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="mergeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 27</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 228</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Entires</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
   </data>
   <data name="&gt;&gt;splitContainer.Panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="unlockButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer</value>
   </data>
-  <data name="unlockButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>952, 555</value>
+  <data name="splitContainer.Panel2MinSize" type="System.Int32, mscorlib">
+    <value>180</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="splitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>881, 654</value>
+  </data>
+  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>663</value>
+  </data>
+  <data name="splitContainer.SplitterWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;splitContainer.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="changeFontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
   </data>
-  <data name="dateLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="unlockButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 27</value>
-  </data>
-  <data name="&gt;&gt;tagsTextBox.Name" xml:space="preserve">
-    <value>tagsTextBox</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer</value>
+  <data name="changeFontToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change font...</value>
   </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 26</value>
   </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>881, 654</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 7</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Invisible Diary</value>
+  </data>
+  <data name="&gt;&gt;changeFontToolStripMenuItem.Name" xml:space="preserve">
+    <value>changeFontToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;changeFontToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

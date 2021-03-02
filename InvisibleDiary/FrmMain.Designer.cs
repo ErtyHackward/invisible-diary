@@ -1,4 +1,7 @@
-﻿namespace InvisibleDiary
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace InvisibleDiary
 {
     partial class FrmMain
     {
@@ -29,13 +32,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(FrmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.tagsTextBox2 = new System.Windows.Forms.TextBox();
             this.mergeButton = new System.Windows.Forms.Button();
             this.unlockButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
-            this.tagsTextBox = new System.Windows.Forms.TextBox();
             this.writeButton = new System.Windows.Forms.Button();
             this.mainTextBox = new System.Windows.Forms.TextBox();
             this.calendar = new System.Windows.Forms.MonthCalendar();
@@ -54,24 +57,29 @@
             // 
             resources.ApplyResources(this.splitContainer, "splitContainer");
             this.splitContainer.Name = "splitContainer";
+            this.splitContainer.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.splitContainer.AutoScaleMode = AutoScaleMode.Dpi;
             // 
             // splitContainer.Panel1
             // 
-            resources.ApplyResources(this.splitContainer.Panel1, "splitContainer.Panel1");
+            this.splitContainer.Panel1.Controls.Add(this.tagsTextBox2);
             this.splitContainer.Panel1.Controls.Add(this.mergeButton);
             this.splitContainer.Panel1.Controls.Add(this.unlockButton);
             this.splitContainer.Panel1.Controls.Add(this.label3);
             this.splitContainer.Panel1.Controls.Add(this.dateLabel);
-            this.splitContainer.Panel1.Controls.Add(this.tagsTextBox);
             this.splitContainer.Panel1.Controls.Add(this.writeButton);
             this.splitContainer.Panel1.Controls.Add(this.mainTextBox);
             // 
             // splitContainer.Panel2
             // 
-            resources.ApplyResources(this.splitContainer.Panel2, "splitContainer.Panel2");
             this.splitContainer.Panel2.Controls.Add(this.calendar);
             this.splitContainer.Panel2.Controls.Add(this.entriesTreeView);
             this.splitContainer.Panel2.Controls.Add(this.label2);
+            // 
+            // tagsTextBox2
+            // 
+            resources.ApplyResources(this.tagsTextBox2, "tagsTextBox2");
+            this.tagsTextBox2.Name = "tagsTextBox2";
             // 
             // mergeButton
             // 
@@ -97,11 +105,6 @@
             resources.ApplyResources(this.dateLabel, "dateLabel");
             this.dateLabel.Name = "dateLabel";
             // 
-            // tagsTextBox
-            // 
-            resources.ApplyResources(this.tagsTextBox, "tagsTextBox");
-            this.tagsTextBox.Name = "tagsTextBox";
-            // 
             // writeButton
             // 
             resources.ApplyResources(this.writeButton, "writeButton");
@@ -113,6 +116,7 @@
             // 
             resources.ApplyResources(this.mainTextBox, "mainTextBox");
             this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.Font = new Font("Tahoma", 9.75f);
             // 
             // calendar
             // 
@@ -132,19 +136,21 @@
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.changeFontToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // changeFontToolStripMenuItem
             // 
-            resources.ApplyResources(this.changeFontToolStripMenuItem, "changeFontToolStripMenuItem");
             this.changeFontToolStripMenuItem.Name = "changeFontToolStripMenuItem";
+            resources.ApplyResources(this.changeFontToolStripMenuItem, "changeFontToolStripMenuItem");
             // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.splitContainer);
             this.Name = "FrmMain";
@@ -167,7 +173,6 @@
         private System.Windows.Forms.Button unlockButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label dateLabel;
-        private System.Windows.Forms.TextBox tagsTextBox;
         private System.Windows.Forms.Button writeButton;
         private System.Windows.Forms.TextBox mainTextBox;
         private System.Windows.Forms.MonthCalendar calendar;
@@ -176,8 +181,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem changeFontToolStripMenuItem;
         private System.Windows.Forms.Button mergeButton;
-
-
+        private System.Windows.Forms.TextBox tagsTextBox2;
     }
 }
 
